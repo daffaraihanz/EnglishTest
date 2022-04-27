@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="h100" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- G FONTS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins&display=swap');
+    </style>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="h100">
+    <section class="dashboard h100">
+        <div class="container-fluid editProfil h100">
+            <div class="row h100">
+                <div class="col-lg-2 ">
+                    <div class="row flex-column">
+                        <div class="col clean">
+                            <div class="contentLeft">
+                                <div class="text-center">
+                                    <div class="headerz"></div>
+                                    <img class="imgProfil" src="../assets/imgProfil.png" alt="">
+                                    <div>
+                                        <h4>Daffa Raihan Zaki</h4>
+                                        <p class="school">SMK Telkom Purwokerto</p>
+                                    </div>
+                                </div>
+                                <div class="menuWrapper">
+                                    <!-- <h4>Menu</h4> -->
+                                    <a href="./tesBaru.html">
+                                        <div class="d-flex listMenu align-items-center ">
+                                            <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="svgStroke"
+                                                    d="M11 1H3C2.46957 1 1.96086 1.21071 1.58579 1.58579C1.21071 1.96086 1 2.46957 1 3V19C1 19.5304 1.21071 20.0391 1.58579 20.4142C1.96086 20.7893 2.46957 21 3 21H15C15.5304 21 16.0391 20.7893 16.4142 20.4142C16.7893 20.0391 17 19.5304 17 19V7L11 1Z"
+                                                    stroke="#494747" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path class="svgStroke" d="M11 1V7H17" stroke="#494747" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path class="svgStroke" d="M9 17V11" stroke="#494747" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path class="svgStroke" d="M6 14H12" stroke="#494747" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <p>Tes baru</p>
+                                        </div>
+                                    </a>
+                                    <a href="./riwayatTes.html">
+                                        <div class="d-flex listMenu align-items-center">
+                                            <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path class="svgStroke "
+                                                    d="M11 1H3C2.46957 1 1.96086 1.21071 1.58579 1.58579C1.21071 1.96086 1 2.46957 1 3V19C1 19.5304 1.21071 20.0391 1.58579 20.4142C1.96086 20.7893 2.46957 21 3 21H15C15.5304 21 16.0391 20.7893 16.4142 20.4142C16.7893 20.0391 17 19.5304 17 19V7L11 1Z"
+                                                    stroke="#494747" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path class="svgStroke" d="M11 1V7H17" stroke="#494747" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path class="svgStroke" d="M13 12H5" stroke="#494747" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path class="svgStroke" d="M13 16H5" stroke="#494747" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path class="svgStroke" d="M7 8H6H5" stroke="#494747" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+
+                                            <a href="./riwayatTes.html">
+                                                <p>Riwayat Tes</p>
+                                            </a>
+                                        </div>
+                                    </a>
+                                    <div class="d-flex listMenu align-items-center listMenuActive">
+                                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="svgStroke svgStrokeActive"
+                                                d="M17 19V17C17 15.9391 16.5786 14.9217 15.8284 14.1716C15.0783 13.4214 14.0609 13 13 13H5C3.93913 13 2.92172 13.4214 2.17157 14.1716C1.42143 14.9217 1 15.9391 1 17V19"
+                                                stroke="#494747" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path class="svgStroke svgStrokeActive"
+                                                d="M9 9C11.2091 9 13 7.20914 13 5C13 2.79086 11.2091 1 9 1C6.79086 1 5 2.79086 5 5C5 7.20914 6.79086 9 9 9Z"
+                                                stroke="#494747" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+
+                                        <p class="text-white">Profil</p>
+                                    </div>
+                                    <div class="d-flex listMenu align-items-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="svgStroke"
+                                                d="M19 9.50003C19.0034 10.8199 18.6951 12.1219 18.1 13.3C17.3944 14.7118 16.3098 15.8992 14.9674 16.7293C13.6251 17.5594 12.0782 17.9994 10.5 18C9.18013 18.0035 7.87812 17.6951 6.7 17.1L1 19L2.9 13.3C2.30493 12.1219 1.99656 10.8199 2 9.50003C2.00061 7.92179 2.44061 6.37488 3.27072 5.03258C4.10083 3.69028 5.28825 2.6056 6.7 1.90003C7.87812 1.30496 9.18013 0.996587 10.5 1.00003H11C13.0843 1.11502 15.053 1.99479 16.5291 3.47089C18.0052 4.94699 18.885 6.91568 19 9.00003V9.50003Z"
+                                                stroke="#494747" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+
+                                        <p>Hubungi CS</p>
+                                    </div>
+
+                                    <div class="d-flex listMenuLogout align-items-center ">
+                                        <img style="margin-right: 20px;" src="../assets/iconLogout.svg" alt="">
+                                        <p>Keluar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 h100 scroll">
+                    <div class="row flex-column h100 ">
+                        <div class="col-12 clean h100">
+                            <div class="contentRight h100">
+                                <div class="pagination">
+                                    <a href="./profil.html">
+                                        <h3>Profil</h3>
+                                    </a>
+                                    <h3 class="clean">/</h3>
+                                    <h3>Edit Profil</h3>
+                                </div>
+                                <div class="content h100">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="listTask">
+                                                <h4>Edit Profil</h4>
+                                                <div class="row clean justify-content-between">
+                                                    <div class="col-lg-4 ">
+                                                        <div class="cardz d-flex align-items-center">
+                                                            <img src="../assets/ilusEmail.png" alt="">
+                                                            <div>
+                                                                <h5>Perbarui Email</h5>
+                                                                <a href="./updateEmail.html">Perbarui Sekarang</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 ">
+                                                        <div class="cardz d-flex align-items-center">
+                                                            <img src="../assets/ilusPassword.png" alt="">
+                                                            <div>
+                                                                <h5>Perbarui Password</h5>
+                                                                <a href="./updatePassword">Perbarui Sekarang</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 ">
+                                                        <div class="cardz d-flex align-items-center">
+                                                            <img src="../assets/ilusSekolah.png" alt="">
+                                                            <div>
+                                                                <h5>Perbarui Sekolah</h5>
+                                                                <a href="./updateSekolah">Perbarui Sekarang</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../scripts/scripts.js"></script>
+
+</body>
+
+</html>

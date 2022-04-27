@@ -1,0 +1,576 @@
+/* GLOBAL */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+p,h1,h2,h3,h4,h5{
+    padding: 0;
+    margin: 0;
+    color: var(--black);
+}
+
+.pl-0{
+    padding-left: 0;
+}
+
+p{
+    font-size: 16px;
+}
+
+.textWarning{
+    color: var(--black);
+    background: #F7F0E6;
+    border: #FFC309 1px solid;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+
+.scroll{
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+.clean{
+    padding: 0;
+    margin: 0;
+}
+
+.h100{
+    height: 100%;
+}
+
+::placeholder { 
+    color: #C8C8C8;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.displayNone{
+    display: none !important;
+}
+
+.displayBlock{
+    display: block !important;
+}
+
+.buttonFull{
+    background: var(--primary);
+    width: 100%;
+    border-radius: 4px;
+    padding: 18px 0;
+    border: none;
+    color: var(--white);
+    transition: .3s;
+}
+
+.buttonFull:hover{
+    transition: .3s;
+    transform: translateY(-10px);
+    box-shadow:0px 30px  50px -5px rgba(0, 0, 0, .3);
+    background: #2167e0;
+}
+
+.myButton1{
+    background: var(--primary);
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px 0px;
+    border: none;
+    color: var(--white);
+    transition: .3s;
+}
+
+.myButtonDisable{
+    background: var(--disable);
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px 30px;
+    border: none;
+    color: var(--white);
+    transition: .3s;
+    pointer-events: none;
+}
+
+.myButton1:hover{
+    background: var(--buttonHover);
+    transform: translateY(-5px);
+}
+
+
+
+.myInput{
+    background: var(--bgInput);
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+    width: 100%;
+    padding: 18px 20px;
+}
+
+.myInput2{
+    background: var(--bgInput);
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+    width: 100%;
+    padding: 12px 20px;
+    transition: .3s;
+}
+
+
+:root {
+    --primary: #3980FF;
+    --black: #494747;
+    --gray: #B2AFAF;
+    --white: #FFFFFF;
+    --bgLightBlue: #eef1f7;
+    --bgInput: #F8F8F8;
+    --disable: #B3AFAF;
+    --buttonHover: #2167e0;
+    /*  */
+    --medium: 500;
+    --bold: 700;
+    --semiBold: 600;
+}
+
+.liveGradient {
+    background: linear-gradient(-45deg, #4c8bf7, #2167e0, #0c2f6b, #0540a6);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}
+    
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* DASHBOARD */
+
+/* UPDATE EMAIL */
+.dashboard .updateEmail .listTask .row:nth-child(3){
+    margin-top: 60px;
+}
+.dashboard .updateEmail .listTask .row:nth-child(2){
+    margin-top: 30px;
+}
+.dashboard .updateEmail .listTask .row .col-lg-6:nth-child(1){
+    padding-left: 0;
+}
+.dashboard .updateEmail .inputWrapper input{
+   margin-top: 15px;
+}
+.dashboard .updateEmail .rowInputWrapper{
+    background: var(--white);
+    padding: 20px;
+    border-radius: 4px;
+}
+.dashboard .updateEmail .pagination a>h3{
+    padding-right: 0;
+    color: var(--primary);
+    font-weight: var(--medium);
+}
+.dashboard .updateEmail .pagination a+h3+a h3{
+    padding-left: 0;
+    color: var(--primary);
+    font-weight: var(--medium);
+}
+
+.dashboard .updateEmail .pagination a+h3+a+h3+h3{
+    padding-left: 0;
+}
+
+.dashboard .updateEmail .pagination .clean{
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+/* EDIT PROFIL */
+.dashboard .editProfil .pagination a h3{
+    color: var(--primary);
+    font-weight: var(--medium);
+}
+
+.dashboard .editProfil .pagination a h3:hover{
+    text-decoration: underline;
+}
+
+.dashboard .editProfil .pagination h3:nth-child(2){
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.dashboard .editProfil .pagination h3:nth-child(1){
+    padding-right: 0;
+}
+.dashboard .editProfil .pagination h3:nth-child(3){
+    padding-left: 0;
+}
+
+.dashboard .editProfil .listWrapper{
+    background: none !important;
+}
+
+.dashboard .editProfil .listTask .row .col-lg-4:nth-child(1){
+    padding-left: 0;
+}
+
+.dashboard .editProfil .listTask{
+    margin-top: 0 !important;
+}
+
+.dashboard .editProfil .cardz h5{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.dashboard .editProfil .cardz {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.dashboard .editProfil .cardz img{
+    margin-right: 20px;
+}
+.dashboard .editProfil .cardz h5{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+
+/* PROFIL */
+.dashboard .profil .listTask{
+    margin-top: 0 !important;
+}
+
+
+
+/* RIWAYAT TES */
+.dashboard .riwayatTes .row:nth-child(2) .col-lg-12 .listTask{
+    margin-top: 0;
+}
+.dashboard .riwayatTes button{
+    width:70%;
+}
+.dashboard .riwayatTes .detailTest .col-lg-2:nth-child(4) h5{
+    color: #F24444;
+}
+.dashboard .riwayatTes .detailTest .col-lg-2:nth-child(5) h5{
+    color: #FFC309;
+}
+.dashboard .riwayatTes .detailTest .col-lg-2:nth-child(6) h5{
+    color: #86D723;
+}
+.dashboard .riwayatTes .detailTest .col-lg-2{
+    display: flex;
+    justify-content: center;
+}
+.dashboard .riwayatTes .detailTest{
+    margin-top: -10px;
+    margin-bottom: 30px;
+    border: solid 1px #B2AFAF80;
+    border-radius: 4px;
+    padding: 20px;
+}
+.dashboard .riwayatTes .content{
+    padding-top: 0 !important;
+}
+
+/* AMBIL TES */
+.dashboard .ambilTest .myInput2:hover{
+    background: #2167e020;
+    transition: .3s;
+}
+
+/* content right */
+.dashboard .listWrapper{
+    background: var(--white);
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+
+
+.dashboard .listTask h5{
+    font-size: 16px;
+    font-weight: var(--semiBold);
+    margin-top: 4px;
+}
+
+.dashboard .listTask p{
+    font-size: 16px;
+    color: var(--gray);
+}
+
+.dashboard .listTask{
+    margin-top: 40px;
+}
+.dashboard .inputBar{
+    cursor: pointer;
+}
+.dashboard .listTest{
+    border-top: 1px solid rgb(228, 225, 225);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: var(--white);
+}
+.dashboard .listTest p{
+    cursor: pointer;
+    padding: 20px 20px;
+    transition: .3s;
+}
+.dashboard .listTest p:hover{
+    background: var(--primary);
+    color: var(--white);
+    transition: .3s;
+}
+.dashboard .listTest{
+    /* padding: 12px 20px; */
+}
+
+.dashboard .contentRight .content{
+    background: var(--bgLightBlue);
+    padding: 20px 30px;
+}
+
+.dashboard .contentRight h4{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: var(--medium);
+}
+.dashboard .contentRight h3{
+    padding: 20px 30px;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: var(--semiBold);
+}
+
+.dashboard .contentRight .inputWrapper .inputBar{
+    background: var(--white);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+
+/* content left */
+.dashboard .listMenuLogout{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.dashboard .listMenuLogout p{
+    color: #EB435A;
+}
+
+
+.dashboard .listMenuLogout p{
+    transition: .3s;
+}
+
+
+.dashboard .listMenuLogout:hover p{
+    cursor: pointer;
+    transform: translateX(10px);
+    transition: .3s;
+}
+
+.dashboard .menuWrapper{
+    text-align: center;
+    /* padding-left: 30px; */
+    margin: 40px 10px 10px 10px;
+}
+
+.dashboard .listMenu{
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    transition: .3s;
+}
+
+.dashboard .listMenu:hover{
+    cursor: pointer;
+    border-radius: 4px;
+    background: var(--primary);
+    transition: .3s;
+}
+
+.listMenuActive{
+    color: white;
+    border-radius: 4px;
+    background: var(--primary);
+    padding: 15px 20px;
+}
+
+.svgStrokeActive{
+    stroke: var(--white);
+}
+
+.dashboard .listMenu:hover .svgStroke{
+   stroke: #FFFFFF !important;
+}
+
+.dashboard .listMenu p{
+    font-size: 15px;
+ }
+
+.dashboard .listMenu:hover p{
+   color: var(--white);
+}
+
+.dashboard .imgProfil{
+    margin-top: -50px;
+}
+.dashboard .school{
+    color: var(--gray);
+    margin-top: 4px;
+    font-size: 14px;
+}
+.dashboard h4{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: var(--semiBold);
+}
+.dashboard svg{
+    margin-right: 20px;
+}
+.dashboard .contentLeft{
+    padding-left: 20px;
+    padding: 0;
+}
+
+.dashboard .headerz{
+    background: var(--primary);
+    width: 100%;
+    height: 150px;
+}
+
+/* LOGIN */
+.login a:hover{
+    text-decoration: underline;
+    color: #0c2f6b;
+}
+.login .contentLeft{
+    /* background: var(--primary); */
+    height: 100%;
+}
+
+.login .inputWrapper{
+    margin-bottom: 20px;
+}
+
+.login button{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.login .desc{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.login p span a{
+    color: var(--primary);
+}
+
+.login .col-lg-6 .row{
+    flex-direction: column;
+    height: 100%;
+}
+
+.login .contentLeft{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login h4{
+    color: white;
+    margin-top: 40px;
+    font-size: 28px;
+}
+
+/* REGISTER */
+.register .contentLeft{
+    /* background: var(--primary); */
+    height: 100%;
+}
+
+.register .inputWrapper{
+    margin-bottom: 20px;
+}
+
+.register button{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.register .desc{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.register p span a{
+    color: var(--primary);
+}
+
+.register .col-lg-6 .row{
+    flex-direction: column;
+    height: 100%;
+}
+
+.register .contentLeft{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register .contentLeft img{
+   /* margin-top: 200px; */
+}
+
+.register h4{
+    color: white;
+    margin-top: 40px;
+    font-size: 28px;
+}
