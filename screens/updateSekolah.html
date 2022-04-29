@@ -22,7 +22,7 @@
 
 <body class="h100">
     <section class="dashboard h100">
-        <div class="container-fluid profil h100">
+        <div class="container-fluid updateSekolah h100">
             <div class="row h100">
                 <div class="col-lg-2 ">
                     <div class="row flex-column">
@@ -74,26 +74,26 @@
                                                     stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
 
-                                            <p>Riwayat Tes</p>
+                                            <a href="./riwayatTes.html">
+                                                <p>Riwayat Tes</p>
+                                            </a>
                                         </div>
                                     </a>
-                                    <a href="./profil.html">
-                                        <div class="d-flex listMenu align-items-center listMenuActive">
-                                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path class="svgStroke svgStrokeActive"
-                                                    d="M17 19V17C17 15.9391 16.5786 14.9217 15.8284 14.1716C15.0783 13.4214 14.0609 13 13 13H5C3.93913 13 2.92172 13.4214 2.17157 14.1716C1.42143 14.9217 1 15.9391 1 17V19"
-                                                    stroke="#494747" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path class="svgStroke svgStrokeActive"
-                                                    d="M9 9C11.2091 9 13 7.20914 13 5C13 2.79086 11.2091 1 9 1C6.79086 1 5 2.79086 5 5C5 7.20914 6.79086 9 9 9Z"
-                                                    stroke="#494747" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
+                                    <div class="d-flex listMenu align-items-center listMenuActive">
+                                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="svgStroke svgStrokeActive"
+                                                d="M17 19V17C17 15.9391 16.5786 14.9217 15.8284 14.1716C15.0783 13.4214 14.0609 13 13 13H5C3.93913 13 2.92172 13.4214 2.17157 14.1716C1.42143 14.9217 1 15.9391 1 17V19"
+                                                stroke="#494747" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path class="svgStroke svgStrokeActive"
+                                                d="M9 9C11.2091 9 13 7.20914 13 5C13 2.79086 11.2091 1 9 1C6.79086 1 5 2.79086 5 5C5 7.20914 6.79086 9 9 9Z"
+                                                stroke="#494747" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
 
-                                            <p class="text-white">Profil</p>
-                                        </div>
-                                    </a>
+                                        <p class="text-white">Profil</p>
+                                    </div>
                                     <a href="./helpDesk.html">
                                         <div class="d-flex listMenu align-items-center">
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -103,7 +103,9 @@
                                                     stroke="#494747" stroke-width="2" stroke-linecap="round"
                                                     stroke-linejoin="round" />
                                             </svg>
-                                            <p>Hubungi CS</p>
+                                            <a href="./helpDesk.html">
+                                                <p>Hubungi CS</p>
+                                            </a>
                                         </div>
                                     </a>
 
@@ -121,35 +123,34 @@
                         <div class="col-12 clean h100">
                             <div class="contentRight h100">
                                 <div class="pagination">
-                                    <h3>Profil</h3>
+                                    <a href="./profil.html">
+                                        <h3>Profil</h3>
+                                    </a>
+                                    <h3 class="clean">/</h3>
+                                    <a href="./editProfil.html">
+                                        <h3>Edit Profil</h3>
+                                    </a>
+                                    <h3 class="clean">/</h3>
+                                    <h3>Perbarui Sekolah</h3>
                                 </div>
                                 <div class="content h100">
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="listTask">
-                                                <h4>Detail Profil</h4>
-                                                <div class="listWrapper">
-                                                    <div class="row clean align-items-center justify-content-between">
-                                                        <div class="col-lg-1">
-                                                            <img class="img-fluid" src="../assets/imgTest.png" alt="">
+                                                <h4>Perbarui Sekolah</h4>
+                                                <div class="rowInputWrapper">
+                                                    <div class="row clean justify-content-between">
+                                                        <div class="col-lg-12 pl-0">
+                                                            <div class="inputWrapper">
+                                                                <p>Kode Sekolah</p>
+                                                                <input placeholder="Masukan kode sekolah"
+                                                                    class="myInput2" type="text" name="" id="">
+                                                            </div>
                                                         </div>
-                                                        <div class="col-lg-3 ">
-                                                            <p>Nama</p>
-                                                            <h5>Daffa Raihan Zaki Daely</h5>
-                                                        </div>
-                                                        <div class="col-lg-3 ">
-                                                            <p>Sekolah</p>
-                                                            <h5>SMK Telkom Purwokerto</h5>
-                                                        </div>
-                                                        <div class="col-lg-3 ">
-                                                            <p>Email</p>
-                                                            <h5>drzaki@gmail.com</h5>
-                                                        </div>
-                                                        <div class="col-lg-2 text-end">
-                                                            <button onclick="window.location.href='./editProfil.html'  "
-                                                                class="myButton1">
-                                                                Edit Profil
-                                                            </button>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-2">
+                                                            <button class="myButton1">Simpan</button>
                                                         </div>
                                                     </div>
                                                 </div>

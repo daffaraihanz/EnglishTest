@@ -27,6 +27,14 @@ p{
     border-radius: 4px;
 }
 
+.numberSelected{
+    border: solid 2px #3980FF !important;
+}
+
+.numberSelected2{
+    color: var(--primary) !important;
+}
+
 .scroll{
     flex-wrap: wrap;
     overflow: scroll;
@@ -62,7 +70,7 @@ a{
     background: var(--primary);
     width: 100%;
     border-radius: 4px;
-    padding: 18px 0;
+    padding: 15px 0;
     border: none;
     color: var(--white);
     transition: .3s;
@@ -108,7 +116,7 @@ a{
     border-radius: 4px;
     border: 1px solid #E5E5E5;
     width: 100%;
-    padding: 18px 20px;
+    padding: 15px 20px;
 }
 
 .myInput2{
@@ -180,42 +188,278 @@ a{
     }
 }
 
-/* DASHBOARD */
+/* TRIAL SECTION */
 
-/* UPDATE EMAIL */
-.dashboard .updateEmail .listTask .row:nth-child(3){
-    margin-top: 60px;
+.trial .questionListBody .row{
+    margin-left: 0;
+    margin-right: 0;
 }
-.dashboard .updateEmail .listTask .row:nth-child(2){
-    margin-top: 30px;
+
+.trial .bodyz .numberWrapper{
+    margin-top: 15px;
+    background: var(--white);
+    /* padding: 14px 0; */
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: solid 1px #E5E5E5;
+    text-align: center;
 }
-.dashboard .updateEmail .listTask .row .col-lg-6:nth-child(1){
+
+.trial .bodyz .questionListBody{
+    overflow: scroll;
+    height: 541px;
+    padding: 20px 30px 30px 30px;
+    background: var(--bgInput);
+}
+
+.trial .bodyz .questionListHead h4{
+    font-size: 18px;
+    color: var(--white);
+    font-weight: var(--semiBold);
+}
+
+.trial .bodyz{
+    margin-top: 10px;
+}
+
+.trial .bodyz .col-lg-3{
     padding-left: 0;
 }
-.dashboard .updateEmail .inputWrapper input{
+
+.trial .head .col{
+    padding-left: 0;
+}
+
+.trial .bodyz .arrowQuestionWrapper{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: var(--white);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.trial .bodyz .questionListHead{
+    background: var(--primary);
+    padding: 10px 10px 10px 30px;
+}
+
+.trial .head{
+    background: #383838;
+    padding: 20px 30px;
+}
+
+.trial .head .profilWrapper h4{
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+.trial .head .profilWrapper p{
+    color: var(--gray);
+}
+
+.trial .head .profilWrapper img{
+    margin-right: 20px;
+}
+
+/* PRE SECTION LISTENING */
+.preListening .row:nth-child(4) .choice{
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.preListening .row:nth-child(4) .choiceWrapper{
+    border-radius: 2000px;
+    border: #E5E5E5 solid 1px;
+    width: 40px;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 40px;
+    background: var(--bgLightBlue);
+}
+.preListening .row{
+    padding: 50px 70px;
+}
+.preListening .row:nth-child(1){
+    background: var(--bgLightBlue);
+}
+.preListening .row:nth-child(2){
+    background: var(--bgInput);
+}
+.preListening .row:nth-child(3) h3+p+h3{
+    margin-top: 70px;
+}
+.preListening .row:nth-child(4) .col>h3+p, .preListening .row:nth-child(4) .col>h3+p+div+p,.preListening .row:nth-child(4) .col>h3+p+div+p+div+p{
+    color: var(--gray);
+    margin-top: 40px;
+}
+.preListening h2{
+    font-size: 30px;
+    font-weight: var(--semiBold);
+}
+
+.preListening h3{
+    font-size: 20px;
+}
+
+.preListening h4{
+    font-size: 18px;
+    margin-top: 10px;
+    color: #FFC309;
+}
+
+.preListening span{
+    font-size: 18px;
+    margin-top: 10px;
+    color: var(--black);
+    font-weight: var(--semiBold);
+}
+
+.preListening p{
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 20px;
+}
+
+.preListening{
+    padding-bottom: 100px;
+}
+/* DASHBOARD */
+
+/* HELPDESK */
+.dashboard .helpDesk .kontak img{
+    margin-right: 15px;
+}
+
+.dashboard .helpDesk .kontak h5{
+    font-weight: var(--medium);
+    margin-top: 4px;
+    font-size: 16px;
+}
+
+.dashboard .helpDesk button{
+    margin-top: 30px;
+}
+.dashboard .helpDesk .form p, .dashboard .helpDesk .kontak p{
+    font-size: 16px;
+    color: var(--gray);
+}
+
+.dashboard .helpDesk .inputWrapper input, .dashboard .helpDesk .inputWrapper textarea{
+    margin-top: 15px;
+ }
+
+.dashboard .helpDesk .inputWrapper {
+    margin-bottom: 30px;
+ }
+
+.dashboard .helpDesk .inputWrapper:nth-child(4) {
+    margin-bottom: 0;
+ }
+
+
+.dashboard .helpDesk .rowInputWrapper{
+    background: var(--white);
+    padding: 20px 20px 20px 20px;
+    border-radius: 4px;
+}
+
+/* UPDATE SEKOLAH */
+.dashboard .updateSekolah .listTask{
+    margin-top: 0 !important;
+}
+
+.dashboard .updateSekolah .listTask .row:nth-child(3){
+    margin-top: 60px;
+}
+.dashboard .updateSekolah .listTask .row:nth-child(2){
+    margin-top: 30px;
+}
+.dashboard .updateSekolah .listTask .row .col-lg-6:nth-child(1){
+    padding-left: 0;
+}
+.dashboard .updateSekolah .inputWrapper input{
    margin-top: 15px;
 }
-.dashboard .updateEmail .rowInputWrapper{
+.dashboard .updateSekolah .rowInputWrapper{
     background: var(--white);
     padding: 20px;
     border-radius: 4px;
 }
-.dashboard .updateEmail .pagination a>h3{
+.dashboard .updateSekolah .pagination a>h3{
     padding-right: 0;
     color: var(--primary);
     font-weight: var(--medium);
 }
-.dashboard .updateEmail .pagination a+h3+a h3{
+.dashboard .updateSekolah .pagination a>h3:hover{
+   text-decoration: underline;
+   color: #0c2f6b;
+}
+.dashboard .updateSekolah .pagination a+h3+a h3{
     padding-left: 0;
     color: var(--primary);
     font-weight: var(--medium);
 }
 
-.dashboard .updateEmail .pagination a+h3+a+h3+h3{
+.dashboard .updateSekolah .pagination a+h3+a+h3+h3{
     padding-left: 0;
 }
 
-.dashboard .updateEmail .pagination .clean{
+.dashboard .updateSekolah .pagination .clean{
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+/* UPDATE EMAIL & PASSWORD */
+
+.dashboard .updateEmail .listTask, .dashboard .updatePassword .listTask{
+    margin-top: 0 !important;
+}
+
+.dashboard .updateEmail .listTask .row:nth-child(3), .dashboard .updatePassword .listTask .row:nth-child(3){
+    margin-top: 60px;
+}
+.dashboard .updateEmail .listTask .row:nth-child(2), .dashboard .updatePassword .listTask .row:nth-child(2){
+    margin-top: 30px;
+}
+.dashboard .updateEmail .listTask .row .col-lg-6:nth-child(1), .dashboard .updatePassword .listTask .row .col-lg-6:nth-child(1){
+    padding-left: 0;
+}
+.dashboard .updateEmail .inputWrapper input, .dashboard .updatePassword .inputWrapper input{
+   margin-top: 15px;
+}
+.dashboard .updateEmail .rowInputWrapper, .dashboard .updatePassword .rowInputWrapper{
+    background: var(--white);
+    padding: 20px;
+    border-radius: 4px;
+}
+.dashboard .updateEmail .pagination a>h3, .dashboard .updatePassword .pagination a>h3{
+    padding-right: 0;
+    color: var(--primary);
+    font-weight: var(--medium);
+}
+.dashboard .updateEmail .pagination a>h3:hover, .dashboard .updatePassword .pagination a>h3:hover{
+   text-decoration: underline;
+   color: #0c2f6b;
+}
+.dashboard .updateEmail .pagination a+h3+a h3, .dashboard .updatePassword .pagination a+h3+a h3{
+    padding-left: 0;
+    color: var(--primary);
+    font-weight: var(--medium);
+}
+
+.dashboard .updateEmail .pagination a+h3+a+h3+h3, .dashboard .updatePassword .pagination a+h3+a+h3+h3{
+    padding-left: 0;
+}
+
+.dashboard .updateEmail .pagination .clean, .dashboard .updatePassword .pagination .clean{
     padding-right: 16px;
     padding-left: 16px;
 }
@@ -228,6 +472,7 @@ a{
 
 .dashboard .editProfil .pagination a h3:hover{
     text-decoration: underline;
+    color: #0c2f6b;
 }
 
 .dashboard .editProfil .pagination h3:nth-child(2){
@@ -301,11 +546,18 @@ a{
     display: flex;
     justify-content: center;
 }
+.dashboard .riwayatTes .listWrapper{
+    margin-bottom: 25px;
+}
+
 .dashboard .riwayatTes .detailTest{
-    margin-top: -10px;
-    margin-bottom: 30px;
-    border: solid 1px #B2AFAF80;
+    margin-top: -25px;
+    margin-bottom: 25px;
+    background: var(--white);
+    border-top: solid 1px #B2AFAF80;
     border-radius: 4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     padding: 20px;
 }
 .dashboard .riwayatTes .content{
@@ -385,6 +637,10 @@ a{
     background: var(--white);
     padding: 20px;
     border-radius: 4px;
+}
+
+.dashboard input{
+    font-size: 15px;
 }
 
 
@@ -480,7 +736,7 @@ a{
 .dashboard .headerz{
     background: var(--primary);
     width: 100%;
-    height: 150px;
+    height: 100px;
 }
 
 /* LOGIN */
@@ -530,6 +786,11 @@ a{
 }
 
 /* REGISTER */
+.register a:hover{
+    text-decoration: underline;
+    color: #0c2f6b;
+}
+
 .register .contentLeft{
     /* background: var(--primary); */
     height: 100%;
