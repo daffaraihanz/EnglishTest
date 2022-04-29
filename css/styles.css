@@ -3,8 +3,8 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Montserrat";
-}
 
+}
 p,h1,h2,h3,h4,h5{
     padding: 0;
     margin: 0;
@@ -85,9 +85,8 @@ a{
 
 .myButton1{
     background: var(--primary);
-    width: 100%;
     border-radius: 4px;
-    padding: 10px 0px;
+    padding: 10px 40px;
     border: none;
     color: var(--white);
     transition: .3s;
@@ -190,6 +189,64 @@ a{
 
 /* TRIAL SECTION */
 
+
+.trial .buttonWrapper{
+    margin-top: 120px;
+}
+
+.trial .bodyz .testSpaceBody .choiceWrapper{
+    margin-bottom: 20px;
+ }
+
+.trial .bodyz .testSpaceBody .question{
+    margin-bottom: 50px;
+ }
+
+
+.trial .bodyz .testSpaceBody .choice{
+   background: var(--bgLightBlue);
+   border: solid 1px #E5E5E5;
+   width: 38px;
+   height: 38px;
+   border-radius: 2000px;
+   text-align: center;
+   margin-right: 15px;
+}
+
+.trial .bodyz .testSpaceBody .choice p{
+    justify-content: center;
+    display: flex;
+    line-height: 38px;
+}
+
+.trial .bodyz .testSpaceBody p{
+   font-size: 18px;
+}
+
+.trial .bodyz .testSpaceBody{
+    margin-top: 10px;
+    padding: 30px 30px 40px 30px;
+    background: white;
+    border: solid 1px #E5E5E5;
+}
+
+.trial .bodyz .testSpaceHead h4{
+    font-size: 18px;
+    color: var(--gray);
+    font-weight: var(--medium);
+}
+
+.trial .bodyz .testSpaceHead h4 span{
+    color: var(--black);
+    font-weight: var(--semiBold);
+}
+
+.trial .bodyz .testSpaceHead{
+    border: solid 1px #E5E5E5;
+    background: var(--white);
+    padding: 19px 19px 19px 30px;
+}
+
 .trial .questionListBody .row{
     margin-left: 0;
     margin-right: 0;
@@ -210,8 +267,9 @@ a{
 }
 
 .trial .bodyz .questionListBody{
+    border: solid 1px #E5E5E5;
+    height: 450px;
     overflow: scroll;
-    height: 541px;
     padding: 20px 30px 30px 30px;
     background: var(--bgInput);
 }
@@ -266,6 +324,12 @@ a{
 
 .trial .head .profilWrapper img{
     margin-right: 20px;
+}
+
+.trial {
+    background: var(--bgLightBlue);
+    position: relative;
+    overflow: scroll;
 }
 
 /* PRE SECTION LISTENING */
