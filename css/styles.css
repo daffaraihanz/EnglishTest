@@ -35,6 +35,15 @@ p{
     color: var(--primary) !important;
 }
 
+.numberAnswered{
+    background: #494747 !important;
+    border: solid 2px #494747 !important;
+}
+
+.numberAnswered2{
+    color: var(--white) !important;
+}
+
 .scroll{
     flex-wrap: wrap;
     overflow: scroll;
@@ -92,9 +101,45 @@ a{
     transition: .3s;
 }
 
+.myButton2{
+    background: var(--bgLightBlue);
+    border-radius: 4px;
+    padding: 10px 40px;
+    border: none;
+    color: var(--primary);
+    transition: .3s;
+}
+
+
+.myButton2:hover{
+    background: rgb(167, 187, 243);
+    transform: translateY(-5px);
+}
+
 .myButtonDisable{
     background: var(--disable);
     width: 100%;
+    border-radius: 4px;
+    padding: 10px 30px;
+    border: none;
+    color: var(--white);
+    transition: .3s;
+    pointer-events: none;
+}
+
+.myButtonSuccess{
+    background: #86D723;
+    padding: 10px 40px;
+    border-radius: 4px;
+    border: none;
+    color: var(--white);
+    transition: .3s;
+    pointer-events: none;
+}
+
+.myButtonDisable2{
+    background: var(--disable);
+    padding: 10px 40px;
     border-radius: 4px;
     padding: 10px 30px;
     border: none;
@@ -188,10 +233,34 @@ a{
 }
 
 /* TRIAL SECTION */
+/* .lolo{
+    transform: translateX(-100px);
+    transition: .3s;
+    opacity: .5;
+} */
 
+.trial .bodyz .testSpaceBody .myButtonSuccess{
+    right: 30px;
+    position: absolute;
+}
+
+.trial .bodyz .testSpaceHead .countDown{
+    background: var(--black);
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+
+.trial .bodyz .testSpaceHead .countDown p{
+    color: var(--white);
+    font-size: 18px;
+}
 
 .trial .buttonWrapper{
     margin-top: 120px;
+}
+
+.trial .buttonWrapper button{
+    margin-right: 12px;
 }
 
 .trial .bodyz .testSpaceBody .choiceWrapper{
@@ -244,7 +313,7 @@ a{
 .trial .bodyz .testSpaceHead{
     border: solid 1px #E5E5E5;
     background: var(--white);
-    padding: 19px 19px 19px 30px;
+    padding: 10px 30px 10px 30px;
 }
 
 .trial .questionListBody .row{
@@ -264,7 +333,17 @@ a{
     border-radius: 4px;
     border: solid 1px #E5E5E5;
     text-align: center;
+    transition: .3s;
 }
+
+.trial .bodyz .numberWrapper:hover{
+    transform: translateY(-5px);
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, .2);
+}
+
+
 
 .trial .bodyz .questionListBody{
     border: solid 1px #E5E5E5;
@@ -272,6 +351,15 @@ a{
     overflow: scroll;
     padding: 20px 30px 30px 30px;
     background: var(--bgInput);
+}
+
+.trial .bodyz .questionListBody .infoAnswered{
+    color: var(--gray);
+}
+
+.trial .bodyz .questionListBody .infoAnswered span{
+    color: var(--black);
+    font-weight: var(--semiBold);
 }
 
 .trial .bodyz .questionListHead h4{
@@ -301,11 +389,19 @@ a{
     width: 40px;
     text-align: center;
     border-radius: 4px;
+    transition: .3s;
 }
 
 .trial .bodyz .questionListHead{
     background: var(--primary);
     padding: 10px 10px 10px 30px;
+}
+
+.trial .bodyz .questionListHead .arrowQuestionWrapper:hover{
+    cursor: pointer;
+    transform: translateX(-5px);
+    transition: .3s;
+    background: rgba(255, 255, 255, .9);
 }
 
 .trial .head{

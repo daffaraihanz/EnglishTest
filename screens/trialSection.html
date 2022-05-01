@@ -44,174 +44,55 @@
                         <div class="questionListWrapper h100">
                             <div class="questionListHead d-flex align-items-center justify-content-between">
                                 <h4>Question List</h4>
-                                <div class="arrowQuestionWrapper">
-                                    <img src="../assets/arrowLeftQuestion.png" alt="">
-                                </div>
-                            </div>
-                            <div class="questionListBody">
-                                <p><span>0</span> telah terjawab dari 5</p>
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper numberSelected">
-                                            <h4 class="numberSelected2">1</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>2</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>3</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>4</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>5</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>6</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>1</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>2</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>3</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>4</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>5</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>6</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>1</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>2</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>3</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>4</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>5</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>6</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>1</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>2</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>3</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>4</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>5</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>6</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>1</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>2</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>3</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>4</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>5</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="numberWrapper">
-                                            <h4>6</h4>
-                                        </div>
-                                    </div>
+                                <div onclick="toggleArrowQuestionFunction()" class="arrowQuestionWrapper">
+                                    <img id="arrowQuestion" src="../assets/arrowLeftQuestion.png" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-9 pl-0">
-                        <div class="testSpaceHead">
-                            <h4>Question No <span>1</span> from 5</h4>
+                        <div class="testSpaceHead d-flex justify-content-between align-items-center">
+                            <h4 class="">Question No <span>1</span> from 5</h4>
                             <div class="countDown">
                                 <p>04:50</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="listQuestionBody" class="col-lg-3">
+                        <div class="questionListBody">
+                            <p class="infoAnswered"><span>1</span> telah terjawab dari 5</p>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="numberWrapper numberSelected">
+                                        <h4 class="numberSelected2">1</h4>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 ">
+                                    <div class="numberWrapper numberAnswered ">
+                                        <h4 class="numberAnswered2">2</h4>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="numberWrapper">
+                                        <h4>3</h4>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="numberWrapper">
+                                        <h4>4</h4>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="numberWrapper">
+                                        <h4>5</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="testBody" class=" col-lg-9 pl-0">
                         <div class="testSpaceBody">
                             <div class="question">
                                 <p>1. Researchers use ………. that scientists create (such as about biology, chemical and
@@ -243,15 +124,22 @@
                                 <p>Their scientific paper</p>
                             </div>
                             <div class="buttonWrapper">
-                                <button class="myButton1">Prev</button>
+                                <button class="myButton2">
+                                    Prev
+                                </button>
                                 <button class="myButton1">Next</button>
+                                <button class="myButtonDisable2">Prev</button>
+                                <button class="myButtonDisable2">Next</button>
+                                <button class="myButtonSuccess">Finish</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            </div>
         </section>
     </section>
+    <script src="../scripts/scripts.js"></script>
 </body>
 
 </html>
