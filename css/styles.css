@@ -134,7 +134,11 @@ a{
     border: none;
     color: var(--white);
     transition: .3s;
-    pointer-events: none;
+}
+
+.myButtonSuccess:hover{
+    background: #0c9339;
+    transform: translateY(-5px);
 }
 
 .myButtonDisable2{
@@ -232,12 +236,217 @@ a{
     }
 }
 
-/* TRIAL SECTION */
-/* .lolo{
-    transform: translateX(-100px);
+/* LISTENING SECTION */
+.listening .textWarning{
+    width: 456px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 16px !important;
+}
+.listening .bodyz .testSpaceBody .myButtonSuccess{
+    right: 30px;
+    position: absolute;
+}
+
+.listening .bodyz .testSpaceHead .countDown{
+    background: var(--black);
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+
+.listening .bodyz .testSpaceHead .countDown p{
+    color: var(--white);
+    font-size: 18px;
+}
+
+.listening .buttonWrapper{
+    margin-top: 120px;
+}
+
+.listening .buttonWrapper button{
+    margin-right: 12px;
+}
+
+.listening .bodyz .testSpaceBody .choiceWrapper{
+    margin-bottom: 20px;
+}
+
+.listening .bodyz .testSpaceBody .question{
+    margin-bottom: 40px;
+}
+
+.listening .bodyz .testSpaceBody .questionWrapper{
+    margin-top: 70px;
+}
+
+.listening .bodyz .testSpaceBody audio{
+    margin-bottom: 40px;
+    
+}
+
+.listening .bodyz .testSpaceBody .choice{
+   background: var(--bgLightBlue);
+   border: solid 1px #E5E5E5;
+   width: 38px;
+   height: 38px;
+   border-radius: 2000px;
+   text-align: center;
+   margin-right: 15px;
+}
+
+.listening .bodyz .testSpaceBody .question p i{
+    color: var(--gray);
+}
+
+.listening .bodyz .testSpaceBody .choice p{
+    justify-content: center;
+    display: flex;
+    line-height: 38px;
+}
+
+.listening .bodyz .testSpaceBody p{
+   font-size: 18px;
+}
+
+.listening .bodyz .testSpaceBody{
+    margin-top: 10px;
+    padding: 30px 30px 40px 30px;
+    background: white;
+    border: solid 1px #E5E5E5;
+}
+
+.listening .bodyz .testSpaceHead h4{
+    font-size: 18px;
+    color: var(--gray);
+    font-weight: var(--medium);
+}
+
+.listening .bodyz .testSpaceHead h4 span{
+    color: var(--black);
+    font-weight: var(--semiBold);
+}
+
+.listening .bodyz .testSpaceHead{
+    border: solid 1px #E5E5E5;
+    background: var(--white);
+    padding: 10px 30px 10px 30px;
+}
+
+.listening .questionListBody .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.listening .bodyz .numberWrapper{
+    margin-top: 15px;
+    background: var(--white);
+    /* padding: 14px 0; */
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: solid 1px #E5E5E5;
+    text-align: center;
     transition: .3s;
-    opacity: .5;
-} */
+}
+
+.listening .bodyz .numberWrapper:hover{
+    transform: translateY(-5px);
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, .2);
+}
+
+
+
+.listening .bodyz .questionListBody{
+    border: solid 1px #E5E5E5;
+    height: 450px;
+    overflow: scroll;
+    padding: 20px 30px 30px 30px;
+    background: var(--bgInput);
+}
+
+.listening .bodyz .questionListBody .infoAnswered{
+    color: var(--gray);
+}
+
+.listening .bodyz .questionListBody .infoAnswered span{
+    color: var(--black);
+    font-weight: var(--semiBold);
+}
+
+.listening .bodyz .questionListHead h4{
+    font-size: 18px;
+    color: var(--white);
+    font-weight: var(--semiBold);
+}
+
+.listening .bodyz{
+    margin-top: 10px;
+}
+
+.listening .bodyz .col-lg-3{
+    padding-left: 0;
+}
+
+.listening .head .col{
+    padding-left: 0;
+}
+
+.listening .bodyz .arrowQuestionWrapper{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: var(--white);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.listening .bodyz .questionListHead{
+    background: var(--primary);
+    padding: 10px 10px 10px 30px;
+}
+
+.listening .bodyz .questionListHead .arrowQuestionWrapper:hover{
+    cursor: pointer;
+    transform: translateX(-5px);
+    transition: .3s;
+    background: rgba(255, 255, 255, .9);
+}
+
+.listening .head{
+    background: #383838;
+    padding: 20px 30px;
+}
+
+.listening .head .profilWrapper h4{
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+.listening .head .profilWrapper p{
+    color: var(--gray);
+}
+
+.listening .head .profilWrapper img{
+    margin-right: 20px;
+}
+
+.listening {
+    background: var(--bgLightBlue);
+    position: relative;
+    overflow: scroll;
+}
+
+
+
+/* TRIAL SECTION */
 
 .trial .bodyz .testSpaceBody .myButtonSuccess{
     right: 30px;
