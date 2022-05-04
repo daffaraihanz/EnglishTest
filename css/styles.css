@@ -106,7 +106,7 @@ a{
     transform: translateY(-10px);
     box-shadow:0px 30px  50px -5px rgba(0, 0, 0, .3);
     background: var(--primary);
-    color: white2;
+    color: white;
 }
 
 .buttonFull:hover{
@@ -276,41 +276,51 @@ a{
     background-position: 1% 0%
 }
 }
-    
-@-webkit-keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border-top: solid #3980FF 10px;
+    width: 50%; 
+  }
+
+  .modalz .textWarning{
+    font-weight: var(--medium) !important;
+    padding: 10px 20px;
+    width: 130px;
+    font-size: 16px;
+    margin-bottom: 30px;
 }
 
-@-moz-keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
+.modalz p{
+    font-weight: var(--semiBold);
+    font-size: 20px;
 }
 
-@keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
+.modalz .buttonWrapper .buttonFull2{
+    width: 49% !important;
+    padding: 13px 0;
+    margin-top: 40px;
+}
+
+.modalz .buttonWrapper .buttonFull{
+    width: 49% !important;
+    padding: 13px 0;
+    margin-top: 40px;
 }
 
 /* SCORE SECTION */
@@ -819,6 +829,198 @@ a{
 }
 
 .listening {
+    background: var(--bgLightBlue);
+    position: relative;
+    overflow: scroll;
+}
+
+
+/* GRAMMAR SECTION */
+
+.grammar .bodyz .testSpaceBody .myButtonSuccess{
+    right: 30px;
+    position: absolute;
+}
+
+.grammar .bodyz .testSpaceHead .countDown{
+    background: var(--black);
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+
+.grammar .bodyz .testSpaceHead .countDown p{
+    color: var(--white);
+    font-size: 18px;
+}
+
+.grammar .buttonWrapper{
+    margin-top: 120px;
+}
+
+.grammar .buttonWrapper button{
+    margin-right: 12px;
+}
+
+.grammar .bodyz .testSpaceBody .choiceWrapper{
+    margin-bottom: 20px;
+ }
+
+.grammar .bodyz .testSpaceBody .question{
+    margin-bottom: 40px;
+ }
+
+
+.grammar .bodyz .testSpaceBody .choice{
+   background: var(--bgLightBlue);
+   border: solid 1px #E5E5E5;
+   width: 38px;
+   height: 38px;
+   border-radius: 2000px;
+   text-align: center;
+   margin-right: 15px;
+}
+
+.grammar .bodyz .testSpaceBody .choice p{
+    justify-content: center;
+    display: flex;
+    line-height: 38px;
+}
+
+.grammar .bodyz .testSpaceBody p{
+   font-size: 18px;
+}
+
+.grammar .bodyz .testSpaceBody{
+    margin-top: 10px;
+    padding: 30px 30px 40px 30px;
+    background: white;
+    border: solid 1px #E5E5E5;
+}
+
+.grammar .bodyz .testSpaceHead h4{
+    font-size: 18px;
+    color: var(--gray);
+    font-weight: var(--medium);
+}
+
+.grammar .bodyz .testSpaceHead h4 span{
+    color: var(--black);
+    font-weight: var(--semiBold);
+}
+
+.grammar .bodyz .testSpaceHead{
+    border: solid 1px #E5E5E5;
+    background: var(--white);
+    padding: 10px 30px 10px 30px;
+}
+
+.grammar .questionListBody .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.grammar .bodyz .numberWrapper{
+    margin-top: 15px;
+    background: var(--white);
+    /* padding: 14px 0; */
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: solid 1px #E5E5E5;
+    text-align: center;
+    transition: .3s;
+}
+
+.grammar .bodyz .numberWrapper:hover{
+    transform: translateY(-5px);
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, .2);
+}
+
+
+
+.grammar .bodyz .questionListBody{
+    border: solid 1px #E5E5E5;
+    height: 450px;
+    overflow: scroll;
+    padding: 20px 30px 30px 30px;
+    background: var(--bgInput);
+}
+
+.grammar .bodyz .questionListBody .infoAnswered{
+    color: var(--gray);
+}
+
+.grammar .bodyz .questionListBody .infoAnswered span{
+    color: var(--black);
+    font-weight: var(--semiBold);
+}
+
+.grammar .bodyz .questionListHead h4{
+    font-size: 18px;
+    color: var(--white);
+    font-weight: var(--semiBold);
+}
+
+.grammar .bodyz{
+    margin-top: 10px;
+}
+
+.grammar .bodyz .col-lg-3{
+    padding-left: 0;
+}
+
+.grammar .head .col{
+    padding-left: 0;
+}
+
+.grammar .bodyz .arrowQuestionWrapper{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: var(--white);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.grammar .bodyz .questionListHead{
+    background: var(--primary);
+    padding: 10px 10px 10px 30px;
+}
+
+.grammar .bodyz .questionListHead .arrowQuestionWrapper:hover{
+    cursor: pointer;
+    transform: translateX(-5px);
+    transition: .3s;
+    background: rgba(255, 255, 255, .9);
+}
+
+.grammar .head{
+    background: #383838;
+    padding: 20px 30px;
+}
+
+.grammar .head .profilWrapper h4{
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+.grammar .head .profilWrapper p{
+    color: var(--gray);
+}
+
+.grammar .head .profilWrapper img{
+    margin-right: 20px;
+}
+
+.grammar {
     background: var(--bgLightBlue);
     position: relative;
     overflow: scroll;
