@@ -19,6 +19,12 @@ p{
     font-size: 16px;
 }
 
+.posSticky {
+    position: sticky !important;
+    top: 0;
+    left: 0;
+}
+
 .textWarning{
     color: var(--black);
     background: #F7F0E6;
@@ -235,6 +241,206 @@ a{
         background-position: 0% 50%
     }
 }
+
+/* READING SECTION */
+.reading .desc{
+    margin-bottom: 70px;
+    line-height: 35px;
+}
+
+.reading .bodyz .testSpaceBody .myButtonSuccess{
+    right: 30px;
+    position: absolute;
+}
+
+.reading .bodyz .testSpaceBody .questionWrapper{
+   margin-bottom: 70px;
+}
+
+.reading .bodyz .testSpaceHead .countDown{
+    background: var(--black);
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+
+.reading .bodyz .testSpaceHead .countDown p{
+    color: var(--white);
+    font-size: 18px;
+}
+
+.reading .buttonWrapper{
+    margin-top: 120px;
+}
+
+.reading .buttonWrapper button{
+    margin-right: 12px;
+}
+
+.reading .bodyz .testSpaceBody .choiceWrapper{
+    margin-bottom: 20px;
+ }
+
+.reading .bodyz .testSpaceBody .question{
+    margin-bottom: 40px;
+ }
+
+
+.reading .bodyz .testSpaceBody .choice{
+   background: var(--bgLightBlue);
+   border: solid 1px #E5E5E5;
+   width: 38px;
+   height: 38px;
+   border-radius: 2000px;
+   text-align: center;
+   margin-right: 15px;
+}
+
+.reading .bodyz .testSpaceBody .choice p{
+    justify-content: center;
+    display: flex;
+    line-height: 38px;
+}
+
+.reading .bodyz .testSpaceBody p{
+   font-size: 18px;
+}
+
+.reading .bodyz .testSpaceBody{
+    margin-top: 10px;
+    padding: 30px 30px 40px 30px;
+    background: white;
+    border: solid 1px #E5E5E5;
+}
+
+.reading .bodyz .testSpaceHead h4{
+    font-size: 18px;
+    color: var(--gray);
+    font-weight: var(--medium);
+}
+
+.reading .bodyz .testSpaceHead h4 span{
+    color: var(--black);
+    font-weight: var(--semiBold);
+}
+
+.reading .bodyz .testSpaceHead{
+    border: solid 1px #E5E5E5;
+    background: var(--white);
+    padding: 10px 30px 10px 30px;
+}
+
+.reading .questionListBody .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.reading .bodyz .numberWrapper{
+    margin-top: 15px;
+    background: var(--white);
+    /* padding: 14px 0; */
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: solid 1px #E5E5E5;
+    text-align: center;
+    transition: .3s;
+}
+
+.reading .bodyz .numberWrapper:hover{
+    transform: translateY(-5px);
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, .1);
+}
+
+
+.reading .bodyz .questionListBody{
+    border: solid 1px #E5E5E5;
+    height: 450px;
+    overflow: scroll;
+    padding: 20px 30px 30px 30px;
+    background: var(--bgInput);
+}
+
+.reading .bodyz .questionListBody .infoAnswered{
+    color: var(--gray);
+}
+
+.reading .bodyz .questionListBody .infoAnswered span{
+    color: var(--black);
+    font-weight: var(--semiBold);
+}
+
+.reading .bodyz .questionListHead h4{
+    font-size: 18px;
+    color: var(--white);
+    font-weight: var(--semiBold);
+}
+
+.reading .bodyz{
+    margin-top: 10px;
+}
+
+.reading .bodyz .col-lg-3{
+    padding-left: 0;
+
+}
+
+.reading .head .col{
+    padding-left: 0;
+}
+
+.reading .bodyz .arrowQuestionWrapper{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: var(--white);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.reading .bodyz .questionListHead{
+    background: var(--primary);
+    padding: 10px 10px 10px 30px;
+}
+
+.reading .bodyz .questionListHead .arrowQuestionWrapper:hover{
+    cursor: pointer;
+    transform: translateX(-5px);
+    transition: .3s;
+    background: rgba(255, 255, 255, .9);
+}
+
+.reading .head{
+    background: #383838;
+    padding: 20px 30px;
+}
+
+.reading .head .profilWrapper h4{
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+.reading .head .profilWrapper p{
+    color: var(--gray);
+}
+
+.reading .head .profilWrapper img{
+    margin-right: 20px;
+}
+
+.reading {
+    background: var(--bgLightBlue);
+    position: relative;
+    overflow: scroll;
+}
+
 
 /* LISTENING SECTION */
 .listening .textWarning{
@@ -477,7 +683,7 @@ a{
  }
 
 .trial .bodyz .testSpaceBody .question{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
  }
 
 
