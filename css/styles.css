@@ -106,7 +106,7 @@ a{
     transform: translateY(-10px);
     box-shadow:0px 30px  50px -5px rgba(0, 0, 0, .3);
     background: var(--primary);
-    color: white;
+    color: white2;
 }
 
 .buttonFull:hover{
@@ -217,7 +217,7 @@ a{
 }
 
 .liveGradient {
-    background: linear-gradient(330deg, #22b4fa, #02abff, #54bcfc, #81edfb);
+    background: linear-gradient(330deg, #22b4fa, #02bcff, #54bcfc, #d855f2);
     background-size: 800% 800%;
 
     -webkit-animation: AnimationName 15s ease infinite;
@@ -314,6 +314,18 @@ a{
 }
 
 /* SCORE SECTION */
+
+.score .lottiez{
+    opacity: .2;
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto;
+    width:50%;
+    height: 30%;
+}
 
 .score button:nth-child(2){
     margin-top: 20px;
