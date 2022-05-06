@@ -91,6 +91,16 @@ a{
     transition: .3s;
 }
 
+.buttonFull3{
+    background: var(--primary);
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px 0;
+    border: none;
+    color: var(--white);
+    transition: .3s;
+}
+
 .buttonFull2{
     background: var(--bgLightBlue);
     width: 100%;
@@ -107,6 +117,15 @@ a{
     box-shadow:0px 30px  50px -5px rgba(0, 0, 0, .3);
     background: var(--primary);
     color: white;
+}
+
+.buttonFull3:hover{
+    transition: .3s;
+    transform: translateY(-10px);
+    box-shadow:0px 30px  50px -5px rgba(0, 0, 0, .3);
+    background: var(--primary);
+    color: white;
+    background: #2167e0;
 }
 
 .buttonFull:hover{
@@ -179,6 +198,7 @@ a{
 .myButton1:hover{
     background: var(--buttonHover);
     transform: translateY(-5px);
+    box-shadow:0px 30px  30px -5px rgba(0, 0, 0, .3);
 }
 
 
@@ -277,6 +297,7 @@ a{
 }
 }
 
+
 .modal {
     display: none; 
     position: fixed; 
@@ -322,6 +343,261 @@ a{
     padding: 13px 0;
     margin-top: 40px;
 }
+
+/* DASH EDIT PAKET */
+
+.dashboardAdmin .adminEditPaket .pagination a h3{
+    color: var(--primary);
+    font-weight: var(--medium);
+}
+
+.dashboardAdmin .adminEditPaket .pagination a h3:hover{
+    text-decoration: underline;
+    color: #0c2f6b;
+}
+
+.dashboardAdmin .adminEditPaket .pagination h3:nth-child(2){
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.dashboardAdmin .adminEditPaket .pagination h3:nth-child(1){
+    padding-right: 0;
+}
+.dashboardAdmin .adminEditPaket .pagination h3:nth-child(3){
+    padding-left: 0;
+}
+
+/* DASH CREATE TASK */
+
+.dashboardAdmin .adminCreate .datePickerWrapper:hover{
+    cursor: pointer;
+    background: #2167e020;
+    transition: .3s;
+}
+
+.dashboardAdmin .adminCreate span{
+    color: var(--black);
+}
+
+.dashboardAdmin .adminCreate .form p{
+    font-size: 16px;
+    color: var(--gray);
+}
+
+.dashboardAdmin .adminCreate .form .textPilihTanggal{
+    color: var(--black);
+    font-size: 15px;
+}
+
+.dashboardAdmin .adminCreate .inputWrapper input, .dashboardAdmin .adminCreate .inputWrapper textarea, .dashboardAdmin .adminCreate .datePickerWrapper, .dashboardAdmin .adminCreate .addSoalWrapper {
+    margin-top: 15px;
+ }
+
+.dashboardAdmin .adminCreate .inputWrapper {
+    margin-bottom: 30px;
+}
+
+.dashboardAdmin .adminCreate .rowInputWrapper{
+    background: var(--white);
+    padding: 20px 20px 20px 20px;
+    /* padding: 30px 30px; */
+    border-radius: 4px;
+}
+
+.dashboardAdmin .adminCreate .contentRight .inputWrapper .inputDatePicker{
+   height: 100%;
+   border: none !important;
+   background: none;
+   outline: none;
+}
+.dashboardAdmin .adminCreate .contentRight .addSoalWrapper{
+    background: var(--bgInput);
+    border-radius: 4px;
+    border: 2px dashed #E5E5E5;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    margin-bottom: 50px;
+}
+.dashboardAdmin .adminCreate .contentRight .addSoalWrapper:hover{
+    background: var(--bgLightBlue);
+    transition: .3s;
+    cursor: pointer;
+}
+.dashboardAdmin .adminCreate .contentRight .inputWrapper .datePickerImg{
+   margin-right: 12px;
+}
+.dashboardAdmin .adminCreate .contentRight .inputWrapper .datePickerImg+p{
+   /* margin-top: 2px; */
+}
+.dashboardAdmin .listWrapper{
+    background: var(--white);
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+
+
+.dashboardAdmin .listTask h5{
+    font-size: 16px;
+    font-weight: var(--semiBold);
+    margin-top: 4px;
+}
+
+.dashboardAdmin .listTask p{
+    font-size: 16px;
+    color: var(--gray);
+}
+
+.dashboardAdmin .listTask{
+    margin-top: 40px;
+}
+.dashboardAdmin .inputBar{
+    cursor: pointer;
+}
+.dashboardAdmin .listTest{
+    border-top: 1px solid rgb(228, 225, 225);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: var(--white);
+}
+.dashboardAdmin .listTest p{
+    cursor: pointer;
+    padding: 20px 20px;
+    transition: .3s;
+}
+.dashboardAdmin .listTest p:hover{
+    background: var(--primary);
+    color: var(--white);
+    transition: .3s;
+}
+.dashboardAdmin .contentRight .content{
+    background: var(--bgLightBlue);
+    padding: 20px 30px;
+}
+
+.dashboardAdmin .contentRight h4{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: var(--medium);
+}
+
+.dashboardAdmin .contentRight h3{
+    padding: 20px 30px;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: var(--semiBold);
+}
+
+.dashboardAdmin .contentRight .inputWrapper .inputBar{
+    background: var(--white);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.dashboardAdmin input{
+    font-size: 15px;
+}
+
+.dashboardAdmin .listMenuLogout{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.dashboardAdmin .listMenuLogout p{
+    color: #EB435A;
+}
+
+
+.dashboardAdmin .listMenuLogout p{
+    transition: .3s;
+}
+
+
+.dashboardAdmin .listMenuLogout:hover p{
+    cursor: pointer;
+    transform: translateX(10px);
+    transition: .3s;
+}
+
+.dashboardAdmin .menuWrapper{
+    text-align: center;
+    /* padding-left: 30px; */
+    margin: 40px 10px 10px 10px;
+}
+
+.dashboardAdmin .listMenu{
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    transition: .3s;
+}
+
+.dashboardAdmin .listMenu:hover{
+    cursor: pointer;
+    border-radius: 4px;
+    background: var(--primary);
+    transition: .3s;
+}
+
+.listMenuActive{
+    color: white;
+    border-radius: 4px;
+    background: var(--primary);
+    padding: 15px 20px;
+}
+
+.svgStrokeActive{
+    stroke: var(--white);
+}
+
+.dashboardAdmin .listMenu:hover .svgStroke{
+   stroke: #FFFFFF !important;
+}
+
+.dashboardAdmin .listMenu p{
+    font-size: 15px;
+ }
+
+.dashboardAdmin .listMenu:hover p{
+   color: var(--white);
+}
+
+.dashboardAdmin .imgProfil{
+    margin-top: -50px;
+}
+.dashboardAdmin .school{
+    color: var(--gray);
+    margin-top: 4px;
+    font-size: 14px;
+}
+.dashboardAdmin h4{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: var(--semiBold);
+}
+.dashboardAdmin svg{
+    margin-right: 20px;
+}
+.dashboardAdmin .contentLeft{
+    padding-left: 20px;
+    padding: 0;
+}
+
+.dashboardAdmin .headerz{
+    background: var(--primary);
+    width: 100%;
+    height: 100px;
+}
+
 
 /* SCORE SECTION */
 
@@ -1309,7 +1585,7 @@ a{
 
 .dashboard .helpDesk .inputWrapper {
     margin-bottom: 30px;
- }
+}
 
 .dashboard .helpDesk .inputWrapper:nth-child(4) {
     margin-bottom: 0;
