@@ -2013,13 +2013,16 @@ a{
 }
 
 /* REGISTER */
+.register .contentRight{
+    padding: 100px 0 0 0;
+}
+
 .register a:hover{
     text-decoration: underline;
     color: #0c2f6b;
 }
 
 .register .contentLeft{
-    /* background: var(--primary); */
     height: 100%;
 }
 
