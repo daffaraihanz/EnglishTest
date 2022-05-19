@@ -345,6 +345,10 @@ a{
 }
 
 /* ERRROR SITE */
+.errorSite h1{
+    color: #FFC309;
+}
+
 .errorSite {
     /* background: red; */
     display: flex;
