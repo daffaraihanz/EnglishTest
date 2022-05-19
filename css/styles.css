@@ -344,6 +344,21 @@ a{
     margin-top: 40px;
 }
 
+/* ERRROR SITE */
+.errorSite {
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.errorSite p{
+    margin-top: 20px;
+}
+.errorSite span{
+    color: var(--primary);
+}
+
 /* DASH EDIT PAKET */
 
 .dashboardAdmin .adminEditPaket .pagination a h3{
